@@ -8,7 +8,7 @@ import base64
 
 # ---------------- OPENAI CLIENT ----------------
 client = openai.OpenAI(
-    api_key="YOUR OWN API KEY",
+    api_key="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",
     base_url="https://openrouter.ai/api/v1"
 )
 
