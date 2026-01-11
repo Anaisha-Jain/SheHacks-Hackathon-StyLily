@@ -8,7 +8,7 @@ import base64
 
 # ---------------- OPENAI CLIENT ----------------
 client = openai.OpenAI(
-    api_key="YOUR OWN API",
+    api_key="YOUR OWN API ",
     base_url="https://openrouter.ai/api/v1"
 )
 
@@ -207,7 +207,13 @@ Websites matching this aesthetic and color:
 with middle:
     st.markdown("<div class='panel'>OUTFIT GENERATION</div>", unsafe_allow_html=True)
 
-    budget = st.selectbox("Budget", ["0–25","25–50","50–75","75–100","100–125"], key='budget')
+    budget = st.selectbox(
+        "Budget",
+        [
+            "0–25", "25–50", "50–75", "75–100", "100–125", "125–150", "150–200", "200–300", "300–500", "500+"
+        ],
+        key='budget'
+    )
     event = st.text_input("Event", key='event')
     temp_range = st.selectbox("Temperature", ["Cold", "Mild", "Hot"], key='temp_range')
     rainy = st.checkbox("Rainy", key='rainy')
