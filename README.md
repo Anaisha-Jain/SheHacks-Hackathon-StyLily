@@ -1,5 +1,4 @@
 # SheHacks-Hackathon-StyLily
-<h1>SheHacks Project</h1>
 <ul>
     <li> This is was our hacakthon project! </li>
     <li>The program uses AI to find clothes online for the user based on aesthetic (user upload), budget, occasion, weather.</li>
